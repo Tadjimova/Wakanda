@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    padding: 20px 0;
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+       ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+
+
+        li {
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                width: 0px;
+                background-color: blue;
+                transition: .3s ease-in-out;
+            }
+
+            &:hover {
+               &::after {
+                width: 100%;
+               }
+
+            }
+        }
+       }
+    }
+}
+

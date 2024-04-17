@@ -1,0 +1,25 @@
+@use "./variables" as v;
+
+
+.btn {
+    border:none;
+    outline: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-solid {
+    background-color: v.$primary-color;
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+
+    &:hover {
+        background-color: rgb(54, 54, 203);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
